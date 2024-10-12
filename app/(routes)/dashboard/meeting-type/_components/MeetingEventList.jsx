@@ -59,7 +59,7 @@ function MeetingEventList() {
     }
 
     const onShareClickHandler = (event) => {
-        const meetingEventUrl = process.env.NEXT_PUBLIC_BASE_URL + '/' + businessInfo.businessName + '/' + event.id;
+        const meetingEventUrl = process.env.NEXT_PUBLIC_BASE_URL + '/' + businessName + '/' + event.id;
 
         if (navigator.share) {
             navigator.share({
